@@ -1,0 +1,36 @@
+import React, { useContext } from 'react';
+import { ItemTypes } from './Constant';
+import { useDrop } from 'react-dnd';
+import CalendarContext from './CalendarContext';
+
+function RoomDate(props) {
+
+    // load default context
+    const context = useContext(CalendarContext);
+
+    // enable drop
+    const [{ isOver }, drop] = useDrop({
+        accept: ItemTypes.BOOKING,
+        
+        drop: (singleBookingDraggableItem) => {
+            context.actionMoveBooking(singleBookingDraggableItem.singleBooking, props.room.id, props.day);
+            // context.actionOpenPopup(singleBookingDraggableItem.singleBooking);
+        },
+
+        collect: monitor => ({
+            isOver: !!monitor.isOver(),
+        }),
+    })
+
+    const clickHandler = (event) => {
+        context.actionOpenPopup({PropertyId:props.room.id, start_date:props.day, end_date:props.day});
+    }
+
+    return (
+        <td ref={drop} key={props.day.getTime()} style={{ "width": (props.cellWidth + "px") }} onClick={clickHandler}>
+            {props.children}
+        </td>
+    );
+}
+
+export default RoomDate;

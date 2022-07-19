@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="pingback" href="./xmlrpc.php">
+    <link rel="shortcut icon" href="./wp-content/themes/wprentals/img/favicon.gif" type="image/x-icon">
+    <meta name="robots" content="max-image-preview:large" />
+    <title>Wprentals</title>
+      <link rel="alternate" type="application/rss+xml" title="My Blog &raquo; Feed" href="./feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="My Blog &raquo; Comments Feed" href="./comments/feed/index.html" />
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="wp-components-css" href="/wp-includes/css/dist/components/style.min.css?ver=5.8.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="wp-block-editor-css" href="/wp-includes/css/dist/block-editor/style.min.css?ver=5.8.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="wp-nux-css" href="/wp-includes/css/dist/nux/style.min.css?ver=5.8.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="wp-reusable-blocks-css" href="./wp-includes/css/dist/reusable-blocks/style.min.css?ver=5.8.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="wp-editor-css" href="./wp-includes/css/dist/editor/style.min.css?ver=5.8.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="rentals_gutenberg-cgb-style-css-css" href="./wp-content/plugins/rentals-gutenberg/dist/blocks.style.build.css?ver=5.8.2" type="text/css" media="all" />
+    <link rel="stylesheet" id="rs-plugin-settings-css" href="./wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.3.6" type="text/css" media="all" />
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+      #rs-demo-id {
+      }
+    </style>
+
+
+<link href="dist-assets/css/plugins/perfect-scrollbar.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" id="bootstrap-css" href="/wp-content/themes/wprentals/css/bootstrap.css?ver=1.0" type="text/css" media="all" />
+<link rel="stylesheet" id="bootstrap-theme-css" href="/wp-content/themes/wprentals/css/bootstrap-theme.css?ver=1.0" type="text/css" media="all" />
+<link rel="stylesheet" id="wpestate_style-css" href="/wp-content/themes/wprentals/style.css?ver=1.0" type="text/css" media="all" />
+<link rel="stylesheet" id="wpestate_media-css" href="./wp-content/themes/wprentals/css/my_media.css?ver=1.0" type="text/css" media="all" />
+<link rel="stylesheet" id="jquery-ui.min-css" href="./wp-content/themes/wprentals/css/jquery-ui.min.css?ver=5.8.2" type="text/css" media="all" />
+<link rel="stylesheet" id="daterangepicker-css" href="./wp-content/themes/wprentals/css/daterangepicker.css?ver=5.8.2" type="text/css" media="all" />
+<link rel="stylesheet" id="wpestate-roboto-css" href="https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C600%2C700%2C900&#038;display=swap&#038;subset=latin-ext&#038;ver=5.8.2" type="text/css" media="all" />
+<link rel="stylesheet" id="fontello-css" href="./wp-content/themes/wprentals//css/fontello.css?ver=5.8.2" type="text/css" media="all" />
+<link rel="stylesheet" id="font-awesome.min-css" href="./wp-content/themes/wprentals/css/fontawesome/css/font-awesome.min.css?ver=5.8.2" type="text/css" media="all" />
+<link rel="stylesheet" id="font-awesome5.min-css" href="./wp-content/themes/wprentals//css/fontawesome/all.css?ver=5.8.2" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-icons-css" href="./wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.9.1" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-animations-css" href="./wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.0.16" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-frontend-legacy-css" href="./wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.0.16" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-frontend-css" href="/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.0.16" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-post-19-css" href="./wp-content/uploads/elementor/css/post-19.css?ver=1638966621" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-global-css" href="./wp-content/uploads/elementor/css/global.css?ver=1638966621" type="text/css" media="all" />
+<link rel="stylesheet" id="elementor-post-18460-css" href="./wp-content/uploads/elementor/css/post-18460.css?ver=1638966621" type="text/css" media="all" />
+<link rel="stylesheet" id="bsf-Defaults-css" href="./wp-content/uploads/smile_fonts/Defaults/Defaults.css?ver=3.19.8" type="text/css" media="all" />
+<link
+  rel="stylesheet"
+  id="google-fonts-1-css"
+  href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.8.2"
+  type="text/css"
+  media="all"
+/>
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <!-- <script src="https://unpkg.com/react-stripe-elements@latest/dist/react-stripe-elements.min.js"></script> -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!--VV BOOTSTRAP 4 datetimepicker necessities -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+
+
+
+
+        <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+    <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+    <script type="text/javascript" src="/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.3.6" id="tp-tools-js"></script>
+    <script type="text/javascript" src="/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.3.6" id="revmin-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/modernizr.custom.62456.js?ver=1.0" id="modernizr-js"></script>
+    <link rel="https://api.w.org/" href="/wp-json/index.html" />
+    <link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/18460/index.html" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.8.2" />
+    <link rel="canonical" href="./index.html" />
+    <link rel="shortlink" href="./index.html?p=18460" />
+    <link rel="alternate" type="application/json+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fhomepage-elementor%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="./wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fhomepage-elementor%2F&#038;format=xml" />
+ 
+    <style type="text/css">
+      #search_wrapper {
+        bottom: 22%;
+      }
+      #search_wrapper.search_wr_oldtype {
+        height: 71px;
+      }
+
+      .listing_detail svg,
+      .property_features_svg_icon {
+        fill: #50adbc;
+      }
+
+      .similar_listings_wrapper {
+        background: transparent;
+      }
+
+      .listing_type_3 .listing_main_image_price,
+      .listing_type_1 .listing_main_image_price,
+      .owner_area_wrapper_sidebar,
+      .listing_type_1 .listing_main_image_price,
+      .owner-page-wrapper {
+        background-image: none;
+      }
+
+      .property_header2 .property_categs .check_avalability:hover,
+      .listing_type_1 .check_avalability {
+        background-color: transparent !important;
+      }
+
+      form.woocommerce-checkout,
+      .woocommerce-error,
+      .woocommerce-info,
+      .woocommerce-message {
+        border-top-color: #50adbc;
+      }
+
+      #form_submit_1,
+      #booking_form_mobile_close,
+      .vc_button.wpb_btn-info,
+      .contact_owner_reservation,
+      .full_invoice_reminder,
+      .search_dashborad_header .wpb_btn-info.wpb_btn-small.wpestate_vc_button.vc_button,
+      .search_dashborad_header .wpestate_vc_button,
+      #submit_mess_front,
+      .modal-content #wp-forgot-but_mod,
+      #imagelist .uploaded_images i,
+      #aaiu-uploader,
+      #send_sms_pin,
+      #validate_phone,
+      .user_dashboard_panel_guide .active:after,
+      .user_dashboard_panel_guide .guide_past:before,
+      .user_dashboard_panel_guide .guide_past:after,
+      .mess_send_reply_button,
+      #change_pass,
+      #update_profile,
+      #book_dates,
+      #edit_prop_ammenities,
+      #edit_calendar,
+      #edit_prop_locations,
+      #google_capture,
+      #edit_prop_details,
+      #edit_prop_image,
+      #edit_prop_price,
+      #edit_prop_1,
+      #set_price_dates,
+      #agent_submit_contact,
+      .listing_type_3 .listing_main_image_price,
+      .listing_type_1 .listing_main_image_price,
+      .property_unit_v3 .price_unit,
+      .property_unit_v2 .icon-fav.icon-fav-on:after,
+      .status_verified,
+      .property_status,
+      .user_mobile_menu_list li:hover,
+      .mobilex-menu li:hover,
+      .double-bounce1,
+      .double-bounce2,
+      .unread_mess_wrap_menu,
+      #view_profile,
+      .wprentals_status_pending .wprentals_status_circle {
+        background-color: #50adbc;
+      }
+
+      .advanced_search_submit_button,
+      .check_avalability,
+      .return_woo_button,
+      .wpestate_header_view_checkout,
+      .wpestate_header_view_cart,
+      #submit_booking_front_instant,
+      #submit_booking_front,
+      #submit_booking_front_link,
+      #advanced_submit_widget,
+      #advanced_submit_2_mobile,
+      #advanced_submit_2,
+      #advanced_submit_3,
+      #submit_action {
+        background: linear-gradient(90deg, #50adbc 50%, #50adbc 100%);
+      }
+
+      .woocommerce #respond input#submit,
+      .woocommerce a.button,
+      .woocommerce button.button,
+      .woocommerce input.button,
+      .woocommerce #respond input#submit.alt,
+      .woocommerce a.button.alt,
+      .woocommerce button.button.alt,
+      .woocommerce input.button.alt,
+      .wpestream_cart_counter_header,
+      .user_loged .wpestream_cart_counter_header,
+      .img_listings_overlay:hover,
+      .panel-title-arrow,
+      .owner_area_wrapper_sidebar,
+      .listing_type_1 .listing_main_image_price,
+      .property_listing .tooltip-inner,
+      .pack-info .tooltip-inner,
+      .pack-unit .tooltip-inner,
+      .adv-2-header,
+      .check_avalability:hover,
+      .owner-page-wrapper,
+      .calendar-legend-reserved,
+      .featured_div,
+      .wpestate_tour .ui-tabs .ui-tabs-nav li.ui-tabs-active,
+      .ll-skin-melon td .ui-state-active,
+      .ll-skin-melon td .ui-state-hover,
+      .price-day,
+      .calendar-legend-reserved,
+      .calendar-reserved,
+      #slider_price_mobile .ui-widget-header,
+      #slider_price_sh .ui-widget-header,
+      #slider_price .ui-widget-header,
+      #slider_price_widget .ui-widget-header,
+      .slider_control_left,
+      .slider_control_right,
+      .wpestate_accordion_tab .ui-state-active,
+      .wpestate_accordion_tab .ui-state-active,
+      .wpestate_accordion_tab .ui-state-active,
+      .wpestate_tabs .ui-tabs .ui-tabs-nav li.ui-tabs-active,
+      .wpestate_progress_bar.vc_progress_bar .vc_single_bar.bar_blue .vc_bar,
+      .wpestate_posts_grid.wpb_teaser_grid .categories_filter li,
+      .wpestate_posts_grid.wpb_categories_filter li,
+      .featured_second_line,
+      .presenttw,
+      #colophon .social_sidebar_internal a:hover,
+      #primary .social_sidebar_internal a:hover,
+      .comment-form #submit,
+      .property_menu_item i:hover,
+      .ball-pulse > div,
+      .icon-fav-on-remove,
+      .share_unit,
+      #adv-search-header-mobile,
+      .red,
+      .pack-info .tooltip-inner,
+      .pack-unit .tooltip-inner,
+      .user_mobile_menu_list li:hover,
+      .listing-hover,
+      #wpestate_slider_radius .ui-widget-header,
+      .ui-widget-content .ui-state-hover,
+      .ui-widget-header .ui-state-hover,
+      .ui-state-focus,
+      .ui-widget-content .ui-state-focus,
+      .ui-widget-header .ui-state-focus,
+      #wp-submit-register,
+      #wp-forgot-but,
+      #wp-login-but,
+      .comment-form #submit,
+      #wp-forgot-but_shortcode,
+      #wp-login-but-wd,
+      #wp-submit-register_wd,
+      #advanced_submit_shorcode,
+      .action1_booking,
+      .generate_invoice,
+      #add_inv_expenses,
+      #add_inv_discount,
+      #wp-submit-register_wd_mobile,
+      #wp-forgot-but_mobile,
+      #wp-login-but-wd-mobile,
+      #book_dates,
+      #allinone_set_custom,
+      #submit_mess_front,
+      .modal-content #wp-login-but,
+      #wp-login-but_sh,
+      #wp-submit-register_sh,
+      #user-id-uploader,
+      #per_hour_ok,
+      .fc-event,
+      .fc-event-dot,
+      .ui-datepicker-calendar .calendar-reserved,
+      .user_dashboard_panel .calendar-reserved,
+      .ui-datepicker-calendar .calendar-reserved,
+      .user_dashboard_panel .calendar-reserved,
+      .daterangepicker td.off.end-date,
+      .daterangepicker td.off.start-date,
+      .daterangepicker td.active,
+      .daterangepicker td.active:hover,
+      .wpestate_booking_class.off.disabled.calendar-reserved,
+      .calendar-reserved {
+        background-color: #50adbc !important;
+      }
+
+      .daterangepicker td.in-range {
+        background-color: #50adbc1a;
+      }
+
+      .showcoupon,
+      .search_wr_type3 .col-md-6.property_price label,
+      .property_header2 .property_categs .check_avalability:hover,
+      .pack-name,
+      .user_dashboard_links a:hover i,
+      .property_ratings_agent i,
+      .prop_pricex,
+      .wpestate_recent_tweets .item:after,
+      .panel-title:hover,
+      .blog_featured.type_1_class:hover .blog-title-link,
+      .places_wrapper.type_1_class:hover .featured_listing_title,
+      .featured_property .property_listing:hover .featured_listing_title,
+      .signuplink:hover,
+      .category_details_wrapper a:hover,
+      .agent-flex:hover .agent-title-link,
+      .property_flex:hover .listing_title_unit,
+      #amount_wd,
+      #amount,
+      #amount_sh,
+      .more_list:hover,
+      .single-content p a:hover,
+      #contact_me_long_owner:hover,
+      #contact_me_long:hover,
+      #view_more_desc,
+      input[type='checkbox']:checked:before,
+      .user_dashboard_panel_guide .active,
+      .hover_type_4 .signuplink:hover,
+      .hover_type_3 .signuplink:hover,
+      #amount_mobile,
+      #colophon .subfooter_menu a:hover,
+      .featured_property.type_1_class .property_listing:hover .featured_listing_title,
+      .featured_property.featured_agent_type2:hover .featured_listing_title {
+        color: #50adbc !important;
+      }
+
+      #submit_action:hover,
+      .property_ratings_agent .owner_total_reviews,
+      .property_ratings_agent i,
+      .property_menu_item_title,
+      .owner_contact_details .property_menu_item,
+      .owner_contact_details .property_menu_item a,
+      .featured_property .property_listing:hover .featured_listing_title {
+        color: #fff !important;
+      }
+
+      .wprentals_status_pending,
+      .user_dashboard_links a:hover,
+      .user_dashboard_links .user_tab_active,
+      .property_unit_v1 .price_unit,
+      .mobile-trigger-user:hover i,
+      .mobile-trigger:hover i,
+      .carousel-control-theme-prev:hover,
+      .carousel-control-theme-next:hover,
+      .hover_price,
+      #user_terms_register_topbar_link:hover,
+      #amount_mobile,
+      #amount_sh,
+      #amount_wd,
+      #amount,
+      .front_plan_row:hover,
+      .delete_search:hover,
+      .wpestate_posts_grid .vc_read_more,
+      .featured_article:hover h2 a,
+      .featured_article:hover .featured_article_right,
+      .user_dashboard_listed a,
+      .pack-listing-title,
+      .user_dashboard_links .user_tab_active i,
+      .idx-price,
+      #infobox_title:hover,
+      .info_details a:hover,
+      .contact_info_details h2,
+      #colophon .widget-container li:hover:before,
+      #colophon .widget-container li:hover,
+      #colophon .widget-container li:hover a,
+      .compare_item_head .property_price,
+      .adv_extended_options_text:hover,
+      #adv_extended_options_show_filters,
+      .show_filters,
+      .adv_extended_options_text,
+      #showinpage,
+      #contactinfobox,
+      .company_headline a:hover i,
+      #primary .contact_sidebar_wrap p:hover a,
+      #colophon .contact_sidebar_wrap p:hover a,
+      .twitter_wrapper a,
+      .twitter_time,
+      .wpestate_recent_tweets .item:after,
+      .widget_nav_menu .sub-menu li:hover a,
+      .widget_nav_menu .sub-menu li:hover,
+      .top_bar .social_sidebar_internal a:hover,
+      .agent_unit_social_single a:hover,
+      .price_area,
+      i.checkon,
+      .listing_main_image_price,
+      .meta-info a:hover,
+      .blog_unit_back:hover .blog-title-link,
+      #colophon .category_name a:hover,
+      .icon-fav,
+      .share_unit a:hover,
+      .share_list,
+      .listing_unit_price_wrapper,
+      .property_listing:hover .listing_title_unit,
+      .icon_selected,
+      #grid_view:hover,
+      #list_view:hover,
+      #user_menu_open > a:hover i,
+      #user_menu_open > a:focus i,
+      .menu_user_tools,
+      .user_menu,
+      .breadcrumb a:hover,
+      .breadcrumb .active,
+      .slider-content .read_more,
+      .slider-title h2 a:hover,
+      a:hover,
+      a:focus,
+      .custom_icon_class_icon,
+      .property_unit_v3 .property-rating,
+      .no_link_details i,
+      #infoguest.custom_infobox_icon i,
+      #inforoom.custom_infobox_icon i,
+      .guest_no_drop:after {
+        color: #50adbc;
+      }
+
+      .check_avalability {
+        border: 1px solid #50adbc !important;
+      }
+
+      .property_flex:hover .blog_unit_back,
+      .property_flex:hover .property_listing,
+      .listing_type_1 .check_avalability,
+      .menu_user_picture,
+      .scrollon,
+      #submit_action {
+        border-color: #50adbc;
+      }
+
+      .share_unit:after {
+        border-top: 8px solid #50adbc;
+      }
+
+      .agentpict {
+        border-bottom: 3px solid #50adbc;
+      }
+
+      #adv_extended_options_show_filters,
+      .show_filters,
+      .testimonial-image {
+        border: 2px solid #50adbc;
+      }
+
+      .user_dashboard_links a:hover i,
+      .user_dashboard_links a:hover,
+      .edit_class,
+      .user_dashboard_links .user_tab_active {
+        border-left-color: #50adbc;
+      }
+
+      .user_dashboard_panel .form-control:focus {
+        border-left: 3px solid #50adbc;
+      }
+
+      blockquote {
+        border-left: 5px solid #50adbc;
+      }
+
+      .wpestate_tabs .ui-widget-header {
+        border-bottom: 2px solid #50adbc;
+      }
+
+      .booking-calendar-wrapper-in .end_reservation,
+      .ll-skin-melon .ui-datepicker td.freetobook.end_reservation {
+        background: #fff9f9;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #50adbc), color-stop(49%, #50adbc), color-stop(50%, #ffffff), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%); /* IE10+ */
+        background: linear-gradient(135deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#50adbc, endColorstr=#ffffff,GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+      }
+
+      .all-front-calendars .end_reservation {
+        background: #fff9f9;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #edf6f6 50%, #edf6f6 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #50adbc), color-stop(49%, #50adbc), color-stop(50%, #edf6f6), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #edf6f6 50%, #edf6f6 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #edf6f6 50%, #edf6f6 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #edf6f6 50%, #edf6f6 100%); /* IE10+ */
+        background: linear-gradient(135deg, #50adbc 0%, #50adbc 49%, #edf6f6 50%, #edf6f6 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#50adbc, endColorstr=#edf6f6,GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+      }
+
+      .ll-skin-melon .ui-datepicker .ui-state-disabled.end_reservation {
+        background: #fff9f9;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZjlmOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #f8f8f8 50%, #f8f8f8 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #50adbc), color-stop(49%, #50adbc), color-stop(50%, #f8f8f8), color-stop(100%, #f8f8f8)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #f8f8f8 50%, #f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #f8f8f8 50%, #f8f8f8 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #f8f8f8 50%, #f8f8f8 100%); /* IE10+ */
+        background: linear-gradient(135deg, #50adbc 0%, #50adbc 49%, #f8f8f8 50%, #f8f8f8 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#50adbc, endColorstr=#ffffff,GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+      }
+
+      .booking-calendar-wrapper-in .calendar-reserved.start_reservation,
+      .ll-skin-melon .ui-datepicker td.calendar-reserved.start_reservation {
+        /*  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%,#50adbc), color-stop(50%,#fff))!important;    */
+        background: #fff9f9; /* Old browsers */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmOWY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I4ODFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(51%, #50adbc), color-stop(100%, #50adbc)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%); /* IE10+ */
+        background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#ffffff, endColorstr=#50adbc,GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+      }
+
+      .all-front-calendars .calendar-reserved.start_reservation {
+        /*  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%,#50adbc), color-stop(50%,#fff))!important;    */
+        background: #fff9f9; /* Old browsers */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmOWY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I4ODFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(-45deg, #edf6f6 0%, #edf6f6 50%, #50adbc 51%, #50adbc 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #edf6f6), color-stop(50%, #edf6f6), color-stop(51%, #50adbc), color-stop(100%, #50adbc)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #edf6f6 0%, #edf6f6 50%, #50adbc 51%, #50adbc 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #edf6f6 0%, #edf6f6 50%, #50adbc 51%, #50adbc 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #edf6f6 0%, #edf6f6 50%, #50adbc 51%, #50adbc 100%); /* IE10+ */
+        background: linear-gradient(135deg, #edf6f6 0%, #edf6f6 50%, #50adbc 51%, #50adbc 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#edf6f6, endColorstr=#50adbc,GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+      }
+
+      .ll-skin-melon .ui-datepicker .ui-state-disabled.start_reservation {
+        /*  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%,#50adbc), color-stop(50%,#fff))!important;    */
+        background: #fff9f9; /* Old browsers */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmOWY5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTElIiBzdG9wLWNvbG9yPSIjYjg4MWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I4ODFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(-45deg, #50adbc 0%, #50adbc 50%, #50adbc 51%, #50adbc 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #50adbc), color-stop(50%, #50adbc), color-stop(51%, #50adbc), color-stop(100%, #50adbc)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #50adbc 0%, #50adbc 50%, #50adbc 51%, #50adbc 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg, #50adbc 0%, #50adbc 50%, #50adbc 51%, #50adbc 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg, #50adbc 0%, #50adbc 50%, #50adbc 51%, #50adbc 100%); /* IE10+ */
+        background: linear-gradient(135deg, #50adbc 0%, #50adbc 50%, #50adbc 51%, #50adbc 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#ffffff, endColorstr=#50adbc,GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+      }
+
+      .wpestate_calendar.start_reservation,
+      .wpestate_booking_class.start_reservation {
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(51%, #50adbc), color-stop(100%, #50adbc)) !important;
+        background: -webkit-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%) !important;
+        background: -o-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%) !important;
+        background: -ms-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%) !important;
+        background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #50adbc 51%, #50adbc 100%) !important;
+      }
+
+      .wpestate_calendar.end_reservation,
+      .wpestate_booking_class.end_reservation {
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #50adbc), color-stop(49%, #50adbc), color-stop(50%, #ffffff), color-stop(100%, #ffffff));
+        background: -webkit-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%);
+        background: -o-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%);
+        background: -ms-linear-gradient(-45deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%);
+        background: linear-gradient(135deg, #50adbc 0%, #50adbc 49%, #ffffff 50%, #ffffff 100%);
+      }
+
+      .transparent_header #topbarlogin:hover:before,
+      .transparent_header #topbarregister:hover:before,
+      .signuplink:hover,
+      .signuplink:hover:before,
+      #topbarregister:before,
+      #topbarlogin:before,
+      .rooms_icon:after,
+      .map_icon:after,
+      .calendar_icon:after,
+      #guest_no_drop:after,
+      #guest_no_shortcode:after,
+      #guest_no_mobile:after,
+      #booking_guest_no_wrapper:after,
+      #guest_no_widget:after,
+      #guest_no:after,
+      .types_icon:after,
+      .actions_icon:after,
+      .bedrooms_icon:after,
+      .baths_icon:after {
+        color: #50adbc;
+      }
+      .social_icons_owner i,
+      .owner-image-container,
+      .owner_listing_image {
+        border-color: #31aabc;
+      }
+      .comment-form #submit:hover,
+      .vc_button.wpb_btn-info:active,
+      .vc_button.wpb_btn-info.active,
+      .vc_button.wpb_btn-info.disabled,
+      .vc_button.wpb_btn-info[disabled] {
+        background-color: #31aabc !important;
+        border: 1px solid #31aabc;
+      }
+
+      #agent_submit_contact:hover,
+      .advanced_search_submit_button:hover,
+      #submit_action:hover,
+      #advanced_submit_3:hover,
+      #advanced_submit_4:hover,
+      .adv_handler:hover,
+      #submit_booking_front_instant:hover,
+      #submit_booking_front:hover,
+      #submit_booking_front_link:hover,
+      #advanced_submit_widget:hover,
+      #advanced_submit_2_mobile:hover,
+      #advanced_submit_2:hover {
+        background: linear-gradient(90deg, #31aabc 50%, #31aabc 100%);
+      }
+
+      #form_submit_1:hover,
+      .contact_owner_reservation:hover,
+      .full_invoice_reminder:hover,
+      #change_pass:hover,
+      #update_profile:hover,
+      #view_profile:hover,
+      .mess_send_reply_button:hover,
+      #set_price_dates:hover,
+      .search_dashborad_header .wpb_btn-info.wpb_btn-small.wpestate_vc_button.vc_button:hover,
+      .search_dashborad_header .wpestate_vc_button:hover,
+      .vc_button.wpb_btn-info:hover {
+        background-color: #31aabc;
+      }
+
+      #aaiu-uploader:hover,
+      #send_sms_pin:hover,
+      #validate_phone:hover,
+      #edit_prop_image:hover,
+      #edit_prop_ammenities:hover,
+      #edit_calendar:hover,
+      #edit_prop_locations:hover,
+      #google_capture:hover,
+      #edit_prop_details:hover,
+      #edit_prop_image:hover,
+      #edit_prop_price:hover,
+      #edit_prop_1:hover,
+      #wp-submit-register:hover,
+      #wp-forgot-but:hover,
+      #wp-login-but:hover,
+      .comment-form #submit:hover,
+      #wp-forgot-but_shortcode:hover,
+      #wp-login-but-wd:hover,
+      #wp-submit-register_wd:hover,
+      #advanced_submit_shorcode:hover,
+      #submit_mess_front:hover,
+      .modal-content #wp-forgot-but_mod:hover {
+        background-color: #31aabc !important;
+      }
+      #access ul.menu > li > a:hover,
+      .transparent_header #access .menu li:hover > a,
+      #access > ul > li:hover > a,
+      #access .menu li:hover > a:focus,
+      #access .menu li:hover > a,
+      #access .menu li:hover > a:active,
+      .hover_type_4 #access .menu > li:hover > a,
+      .hover_type_3 #access .menu > li:hover > a,
+      .signuplink:hover {
+        color: #50adbc !important;
+      }
+      #access .current-menu-item > a,
+      #access .current-menu-parent > a,
+      #access .current-menu-ancestor > a,
+      #access .current-menu-item {
+        color: #50adbc !important;
+      }
+      .hover_type_3 #access .menu > li:hover > a,
+      .hover_type_4 #access .menu > li:hover > a {
+        background: #50adbc !important;
+      }
+      .customnav #access ul.menu >li>a:hover,
+        #access ul.menu >li>a:hover,
+        .hover_type_3 #access .menu > li:hover>a,        .hover_type_4 #access .menu > li:hover>a,
+        .hover_type_6 #access .menu > li:hover>a {
+        color: #50adbc;
+      }
+      .hover_type_5 #access .menu > li:hover > a {
+        border-bottom: 3px solid #50adbc;
+      }
+      .hover_type_6 #access .menu > li:hover > a {
+        border: 2px solid #50adbc;
+      }
+      .hover_type_2 #access .menu > li:hover > a:before {
+        border-top: 3px solid #50adbc;
+      }
+      #advanced_submit_widget:hover,
+      #advanced_submit_2_mobile:hover,
+      #advanced_submit_2:hover,
+      #advanced_submit_3:hover,
+      #advanced_submit_shorcode:hover,
+      .adv_handler:hover,
+      #advanced_submit_4:hover {
+        background-color: #2da9bc !important;
+      }
+      .uvc-heading.ult-adjust-bottom-margin {
+        margin-bottom: 15px;
+      }
+
+      .status_verified {
+        background: #f75e5e;
+        color: white;
+      }
+
+      #wpestate_footer_latest_widget-2 .title-container {
+        color: white;
+      }
+
+      .calendar-reserved {
+        color: white !important;
+      }
+
+      input#search_location_autointernal {
+        text-transform: capitalize;
+      }
+
+      .places_wrapper.places_wrapper4,
+      .places_wrapper.places_wrapper3 {
+        box-shadow: none;
+        background-color: transparent;
+      }
+    </style>
+    <style type="text/css">
+      .recentcomments a {
+        display: inline !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    </style>
+        <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+    <meta name="generator" content="Powered by Slider Revolution 6.3.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script type="text/javascript">
+      function setREVStartSize(e) {
+        //window.requestAnimationFrame(function() {
+        window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+        window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+        try {
+          var pw = document.getElementById(e.c).parentNode.offsetWidth,
+            newh;
+          pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+          e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+          e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+          e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+          e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+          e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+          e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+          e.mh = e.mh === undefined || e.mh == '' || e.mh === 'auto' ? 0 : parseInt(e.mh, 0);
+          if (e.layout === 'fullscreen' || e.l === 'fullscreen') newh = Math.max(e.mh, window.RSIH);
+          else {
+            e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+            for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+            e.gh = e.el === undefined || e.el === '' || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+            e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+            for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+            var nl = new Array(e.rl.length),
+              ix = 0,
+              sl;
+            e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+            e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+            e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+            e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+            for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+            sl = nl[0];
+            for (var i in nl)
+              if (sl > nl[i] && nl[i] > 0) {
+                sl = nl[i];
+                ix = i;
+              }
+            var m = pw > e.gw[ix] + e.tabw + e.thumbw ? 1 : (pw - (e.tabw + e.thumbw)) / e.gw[ix];
+            newh = e.gh[ix] * m + (e.tabh + e.thumbh);
+          }
+          if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document.createElement('style'));
+          document.getElementById(e.c).height = newh + 'px';
+          window.rs_init_css.innerHTML += '#' + e.c + '_wrapper { height: ' + newh + 'px }';
+        } catch (e) {
+          console.log('Failure at Presize of Slider:' + e);
+        }
+        //});
+      }
+    </script>
+    <noscript
+      ><style>
+        .wpb_animate_when_almost_visible {
+          opacity: 1;
+        }
+      </style>
+      </noscript >
+      <body>
+        
+     
+
+  
+    <div id="root"></div>
+         <script type="text/javascript">
+          //<![CDATA[
+          jQuery(document).ready(function () {
+            var availableTags = [1];
+            jQuery('#search_location_autointernal,#search_locationmobile_autointernal,#search_locationsidebar_autointernal,#search_locationshortcode_autointernal,#search_location_filter_autointernal').autocomplete({
+              source: function (request, response) {
+                var results = jQuery.ui.autocomplete.filter(availableTags, request.term);
+                response(results.slice(0, 10));
+              },
+              select: function (a, b) {
+                jQuery('.stype').val(b.item.category);
+
+                if (document.getElementById('search_location_filter_autointernal')) {
+                  jQuery('#search_location_filter_autointernal').val(b.item.label);
+                  wpestate_start_filtering_ajax_map(1);
+                }
+              },
+            });
+          });
+          //]]>
+        </script>
+
+
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        baseUrl: 'https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/',
+        ext: '.png',
+        svgUrl: 'https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/',
+        svgExt: '.svg',
+        source: {
+          concatemoji: '.\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2',
+        },
+      };
+      !(function (e, a, t) {
+        var n,
+          r,
+          o,
+          i = a.createElement('canvas'),
+          p = i.getContext && i.getContext('2d');
+        function s(e, t) {
+          var a = String.fromCharCode;
+          p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+          e = i.toDataURL();
+          return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL();
+        }
+        function c(e) {
+          var t = a.createElement('script');
+          (t.src = e), (t.defer = t.type = 'text/javascript'), a.getElementsByTagName('head')[0].appendChild(t);
+        }
+        for (o = Array('flag', 'emoji'), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)
+          (t.supports[o[r]] = (function (e) {
+            if (!p || !p.fillText) return !1;
+            switch (((p.textBaseline = 'top'), (p.font = '600 32px Arial'), e)) {
+              case 'flag':
+                return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039])
+                  ? !1
+                  : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) &&
+                      !s(
+                        [55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447],
+                        [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]
+                      );
+              case 'emoji':
+                return !s([10084, 65039, 8205, 55357, 56613], [10084, 65039, 8203, 55357, 56613]);
+            }
+            return !1;
+          })(o[r])),
+            (t.supports.everything = t.supports.everything && t.supports[o[r]]),
+            'flag' !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+        (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag),
+          (t.DOMReady = !1),
+          (t.readyCallback = function () {
+            t.DOMReady = !0;
+          }),
+          t.supports.everything ||
+            ((n = function () {
+              t.readyCallback();
+            }),
+            a.addEventListener
+              ? (a.addEventListener('DOMContentLoaded', n, !1), e.addEventListener('load', n, !1))
+              : (e.attachEvent('onload', n),
+                a.attachEvent('onreadystatechange', function () {
+                  'complete' === a.readyState && t.readyCallback();
+                })),
+            (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)));
+      })(window, document, window._wpemojiSettings);
+    </script>
+
+<input type="hidden" id="wprentals_ajax_filtering" value="c7f2599346" />
+    <input type="hidden" id="wpestate_ajax_log_reg" value="36cd982787" />
+    <script type="text/javascript" src="./wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/jquery/ui/mouse.min.js?ver=1.12.1" id="jquery-ui-mouse-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/jquery/ui/slider.min.js?ver=1.12.1" id="jquery-ui-slider-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1" id="jquery-ui-datepicker-js"></script>
+    <script type="text/javascript" id="jquery-ui-datepicker-js-after">
+      jQuery(document).ready(function (jQuery) {
+        jQuery.datepicker.setDefaults({
+          closeText: 'Close',
+          currentText: 'Today',
+          monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          nextText: 'Next',
+          prevText: 'Previous',
+          dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+          dayNamesShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+          dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+          dateFormat: 'MM d, yy',
+          firstDay: 1,
+          isRTL: false,
+        });
+      });
+    </script>
+    <script type="text/javascript" src="./wp-includes/js/jquery/ui/menu.min.js?ver=1.12.1" id="jquery-ui-menu-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/dist/dom-ready.min.js?ver=71883072590656bf22c74c7b887df3dd" id="wp-dom-ready-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de" id="wp-hooks-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79" id="wp-i18n-js"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+      wp.i18n.setLocaleData({ 'text directionltr': ['ltr'] });
+    </script>
+    <script type="text/javascript" id="wp-a11y-js-translations">
+      (function (domain, translations) {
+        var localeData = translations.locale_data[domain] || translations.locale_data.messages;
+        localeData[''].domain = domain;
+        wp.i18n.setLocaleData(localeData, domain);
+      })('default', { locale_data: { messages: { '': {} } } });
+    </script>
+    <script type="text/javascript" src="./../wp-includes/js/dist/a11y.min.js?ver=0ac8327cc1c40dcfdf29716affd7ac63" id="wp-a11y-js"></script>
+    <script type="text/javascript" id="jquery-ui-autocomplete-js-extra">
+      /* <![CDATA[ */
+      var uiAutocompleteL10n = {
+        noResults: 'No results found.',
+        oneResult: '1 result found. Use up and down arrow keys to navigate.',
+        manyResults: '%d results found. Use up and down arrow keys to navigate.',
+        itemSelected: 'Item selected.',
+      };
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.12.1" id="jquery-ui-autocomplete-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/slick.min.js?ver=1.0" id="slick-slider-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/bootstrap.min.js?ver=1.0" id="bootstrap.min-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/jquery.viewport.mini.js?ver=1.0" id="query.viewport.mini-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/placeholders.min.js?ver=1.0" id="placeholders.min-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/dense.js?ver=1.0" id="dense-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/jquery.ui.touch-punch.min.js?ver=1.0" id="jquery.ui.touch-punch.min-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/jquery.lazyload.min.js?ver=1.0" id="jquery.lazyload.min-js"></script>
+    <script type="text/javascript" src="/wp-content/themes/wprentals/js/latinise.min_.js?ver=1.0" id="latinise.min_-js"></script>
+    <script type="text/javascript" src="/wp-includes/js/dist/vendor/moment.min.js?ver=2.29.1" id="moment-js"></script>
+    <script type="text/javascript" id="moment-js-after">
+      moment.updateLocale('en_US', {
+        months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        weekdays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        weekdaysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        week: { dow: 1 },
+        longDateFormat: {
+          LT: 'g:i a',
+          LTS: null,
+          L: null,
+          LL: 'F j, Y',
+          LLL: 'F j, Y g:i a',
+          LLLL: null,
+        },
+      });
+    </script>
+    <script type="text/javascript" src="./wp-content/themes/wprentals/js/daterangepicker.js?ver=1.0" id="daterangepicker-js"></script>
+    <script type="text/javascript" src="./wp-content/themes/wprentals/js/i18n/datepicker-en-GB.js?ver=1.0" id="datepicker-en-GB-js"></script>
+    <script type="text/javascript" id="wpestate_mapfunctions-js-extra">
+      /* <![CDATA[ */
+      var mapfunctions_vars = {
+        path: '.\/wp-content\/themes\/wprentals\/\/css\/css-images',
+        pin_images:
+          '{"entire-home":"","private-room":"","shared-room":"","apartment":"","b-b":"","cabin":"","condos":"","dorm":"","house":"","villa":"","apartmententire-home":"","b-bentire-home":"","cabinentire-home":"","condosentire-home":"","dormentire-home":"","houseentire-home":"","villaentire-home":"","apartmentprivate-room":"","b-bprivate-room":"","cabinprivate-room":"","condosprivate-room":"","dormprivate-room":"","houseprivate-room":"","villaprivate-room":"","apartmentshared-room":"","b-bshared-room":"","cabinshared-room":"","condosshared-room":"","dormshared-room":"","houseshared-room":"","villashared-room":"","single_pin":"https:\\\/\\\/rentals.fikserve.com\\\/wp-content\\\/themes\\\/wprentals\\\/css\\\/css-images\\\/sale.png","cloud_pin":"https:\\\/\\\/rentals.fikserve.com\\\/wp-content\\\/themes\\\/wprentals\\\/css\\\/css-images\\\/cloud.png","userpin":"https:\\\/\\\/rentals.fikserve.com\\\/wp-content\\\/themes\\\/wprentals\\\/css\\\/css-images\\\/userpin.png"}',
+        use_single_image_pin: 'no',
+        geolocation_radius: '1000',
+        adv_search: '0',
+        in_text: ' in ',
+        zoom_cluster: '15',
+        user_cluster: 'yes',
+        open_close_status: '0',
+        open_height: '650',
+        closed_height: '550',
+        generated_pins: '0',
+        geo_no_pos: "The browser couldn't detect your position!",
+        geo_no_brow: 'Geolocation is not supported by this browser.',
+        geo_message: 'm radius',
+        show_adv_search: '',
+        custom_search: 'no',
+        listing_map: 'top',
+        slugs: ['location', 'check-in', 'check-out', '', '', 'bedrooms', 'guests', ''],
+        hows: ['like', 'date bigger', 'date smaller', 'like', 'like', 'equal', 'equal', 'greater'],
+        measure_sys: 'm',
+        close_map: 'close map',
+        show_g_search_status: '',
+        slider_price: 'no',
+        slider_price_position: '0',
+        map_style:
+          '[\r\n    {\r\n        "featureType": "landscape.man_made",\r\n        "elementType": "geometry",\r\n        "stylers": [\r\n            {\r\n                "color": "#f7f1df"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "landscape.natural",\r\n        "elementType": "geometry",\r\n        "stylers": [\r\n            {\r\n                "color": "#d0e3b4"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "landscape.natural.terrain",\r\n        "elementType": "geometry",\r\n        "stylers": [\r\n            {\r\n                "visibility": "off"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "poi",\r\n        "elementType": "labels",\r\n        "stylers": [\r\n            {\r\n                "visibility": "off"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "poi.business",\r\n        "elementType": "all",\r\n        "stylers": [\r\n            {\r\n                "visibility": "off"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "poi.medical",\r\n        "elementType": "geometry",\r\n        "stylers": [\r\n            {\r\n                "color": "#fbd3da"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "poi.park",\r\n        "elementType": "geometry",\r\n        "stylers": [\r\n            {\r\n                "color": "#bde6ab"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "road",\r\n        "elementType": "geometry.stroke",\r\n        "stylers": [\r\n            {\r\n                "visibility": "off"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "road",\r\n        "elementType": "labels",\r\n        "stylers": [\r\n            {\r\n                "visibility": "off"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "road.highway",\r\n        "elementType": "geometry.fill",\r\n        "stylers": [\r\n            {\r\n                "color": "#ffe15f"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "road.highway",\r\n        "elementType": "geometry.stroke",\r\n        "stylers": [\r\n            {\r\n                "color": "#efd151"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "road.arterial",\r\n        "elementType": "geometry.fill",\r\n        "stylers": [\r\n            {\r\n                "color": "#ffffff"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "road.local",\r\n        "elementType": "geometry.fill",\r\n        "stylers": [\r\n            {\r\n                "color": "black"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "transit.station.airport",\r\n        "elementType": "geometry.fill",\r\n        "stylers": [\r\n            {\r\n                "color": "#cfb2db"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        "featureType": "water",\r\n        "elementType": "geometry",\r\n        "stylers": [\r\n            {\r\n                "color": "#a2daf2"\r\n            }\r\n        ]\r\n    }\r\n]',
+        is_tax: '0',
+        is_property_list: '0',
+        bypass_fit_bounds: '0',
+        useprice: 'yes',
+        use_price_pins_full_price: 'yes',
+        adv_search_type: 'newtype',
+        fields_no: '8',
+        hidden_map: '1',
+      };
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="./wp-content/themes/wprentals/js/google_js/mapfunctions.js?ver=1.0" id="wpestate_mapfunctions-js"></script>
+    <script type="text/javascript" id="wpestate_ajaxcalls-js-extra">
+      /* <![CDATA[ */
+      var ajaxcalls_vars = {
+        contact_name: 'Your Name',
+        contact_email: 'Your Email',
+        contact_phone: 'Your Phone',
+        contact_comment: 'Your Message',
+        adv_contact_name: 'Your Name',
+        adv_email: 'Your Email',
+        adv_phone: 'Your Phone',
+        adv_comment: 'Your Message',
+        adv_search: 'Send Message',
+        admin_url: '.\/wp-admin\/',
+        login_redirect: '.\/my-profile\/',
+        login_loading: 'Sending user info, please wait...',
+        userid: '0',
+        prop_featured: 'Property is featured',
+        no_prop_featured: 'You have used all the "Featured" listings in your package.',
+        favorite: 'Favorite<i class="fas fa-heart"><\/i>',
+        add_favorite: 'Add to Favorites',
+        remove_favorite: 'remove from favorites',
+        add_favorite_unit: 'add to favorites',
+        saving: 'saving..',
+        sending: 'sending message..',
+        reserve: 'Reserve Period',
+        paypal: 'Connecting to Paypal! Please wait...',
+        stripecancel: 'subscription will be cancelled at the end of the current period',
+        max_month_no: '15',
+        processing: 'processing..',
+        home: '.',
+        delete_account:
+          'Confirm your ACCOUNT DELETION request! Clicking the button below will result your account data will be deleted. This means you will no longer be able to login to your account and access your account information: My Profile, My Reservations, My bookings, Invoices. This operation CAN NOT BE REVERSED!',
+        adv_search_what_half: ['Location', 'guest_no', 'check_in', 'check_out', 'property_category', 'property_action_category', 'property_bedrooms', 'property_bathrooms', 'property_price'],
+        adv_search_how_half: ['like', 'equal', 'date bigger', 'date smaller', 'like', 'like', 'greater', 'greater', 'equal'],
+        adv_search_type: 'newtype',
+        redirect_users: 'no',
+        redirect_custom_link: '',
+        use_gdpr: 'yes',
+        gdpr_terms: 'You must agree to GDPR Terms',
+      };
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="./wp-content/themes/wprentals/js/ajaxcalls.js?ver=1.0" id="wpestate_ajaxcalls-js"></script>
+    <script type="text/javascript" id="wpestate_mapfunctions_base-js-extra">
+      /* <![CDATA[ */
+      var mapbase_vars = {
+        wprentals_map_type: '1',
+        wprentals_places_type: '1',
+        wp_estate_mapbox_api_key: '',
+        wp_estate_algolia_app_id: '',
+        wp_estate_algolia_api_key: '',
+      };
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="./wp-content/themes/wprentals/js/google_js/maps_base.js?ver=1.0" id="wpestate_mapfunctions_base-js"></script>
+    <script type="text/javascript" id="wpestate_googlecode_regular-js-extra">
+      /* <![CDATA[ */
+      var googlecode_regular_vars = {
+        general_latitude: '40.7075798804',
+        general_longitude: '-74.0480232239',
+        path: '.\/wp-content\/themes\/wprentals\/\/css\/css-images',
+        markers:
+          '[["West%20Town%203rd%20Floor%20Dorm","39.2838253476","-76.5767669678",1,".%2Fwp-content%2Fuploads%2F2018%2F08%2F11-1-1-1-400x314.jpg","%E2%82%AC%2023","dorm","shared-room","dormshared-room",".%2Fproperties%2Fwest-town-3rd-floor-dorm%2F",149,"baltimore","arlington",23,"1","2","250","Dorm","Shared%20Room","verified",""],["Modern%20%26%23038%3B%20Spacious%20Villa","40.7184746","-73.9882516",2,".%2Fwp-content%2Fuploads%2F2018%2F08%2F10-1-1-1-400x314.jpg","%E2%82%AC%20159","villa","entire-home","villaentire-home",".%2Fproperties%2Fmodern-spacious-villa%2F",141,"","east-side",159,"2","5","2,500","Villa","Entire%20Home","",""],["Huge%20Sunny%20Villa%20%26%238211%3B%20East%20Side","40.7185382","-73.9833874",3,".%2Fwp-content%2Fuploads%2F2018%2F08%2F9-1-1-1-400x314.jpg","%E2%82%AC%20500","villa","entire-home","villaentire-home",".%2Fproperties%2Fhuge-sunny-villa-east-side%2F",137,"","east-side",500,"3","12","2,500","Villa","Entire%20Home","",""],["Nice%20Terrace%20Condo%20Penn%20Station","40.7274893","-73.9950182",4,".%2Fwp-content%2Fuploads%2F2018%2F08%2F8-1-1-1-400x314.jpg","%E2%82%AC%20200","condos","private-room","condosprivate-room",".%2Fproperties%2Fterrace-condo-penn-station%2F",133,"","manhattan",200,"2","8","1,200","Condos","Private%20Room","",""],["2%20Bedrooms%20Video","40.7099546663","-74.0066957474",5,".%2Fwp-content%2Fuploads%2F2018%2F08%2F6-1-1-1-400x314.jpg","%E2%82%AC%20150","condos","private-room","condosprivate-room",".%2Fproperties%2F2-bedrooms-condo%2F",129,"","manhattan",150,"2","7","1,000","Condos","Private%20Room","",""],["Summerlin%20Cabin%20%26%238211%3B%20Perfect%20Holiday","39.9467266106","-75.166053772",6,".%2Fwp-content%2Fuploads%2F2018%2F08%2F5-1-1-1-400x314.jpg","%E2%82%AC%2059","cabin","entire-home","cabinentire-home",".%2Fproperties%2Fsummerlin-cabin-perfect-holiday%2F",124,"philadelphia","brightwood",59,"2","6","750","Cabin","Entire%20Home","",""],["Beautiful%20Cabin%2C%20Simple%20Price","39.9350129604","-75.0476074219",7,".%2Fwp-content%2Fuploads%2F2018%2F08%2F4-1-1-1-scaled-1-400x314.jpg","%E2%82%AC%2064","cabin","entire-home","cabinentire-home",".%2Fproperties%2Fbeautiful-cabin-simple-price%2F",119,"philadelphia","brightwood",64,"1","5","750","Cabin","Entire%20Home","",""],["Victorian%20Bed%20%26%23038%3B%20Breakfast","42.2814816","-71.0956488",8,".%2Fwp-content%2Fuploads%2F2018%2F08%2F3-1-1-400x314.jpg","%E2%82%AC%2065","b-b","shared-room","b-bshared-room",".%2Fproperties%2Fvictorian-bed-breakfast%2F",115,"boston","mattapan",65,"1","2","450","B%20%26amp%3B%20B","Shared%20Room","",""],["Beautiful%20Full%20Bed%20and%20Breakfast","42.2814816","-71.0956488",9,".%2Fwp-content%2Fuploads%2F2018%2F08%2F11-1-1-1-400x314.jpg","%E2%82%AC%2059","b-b","shared-room","b-bshared-room",".%2Fproperties%2Fbeautiful-full-bed-breakfast%2F",111,"boston","mattapan",59,"1","2","750","B%20%26amp%3B%20B","Shared%20Room","",""],["Sunny%202%20Bedrooms%20Video","38.9040587199","-77.0333862305",10,".%2Fwp-content%2Fuploads%2F2018%2F08%2F10-1-1-1-400x314.jpg","%E2%82%AC%20225","house","private-room","houseprivate-room",".%2Fproperties%2Fsunny-2-bedrooms-in-the-haight%2F",107,"washington","glover-park",225,"2","4","850","House","Private%20Room","verified",""],["Chic%20Cole%20Valley%20House","38.9026226489","-77.0452737808",11,".%2Fwp-content%2Fuploads%2F2018%2F08%2F9-1-1-1-400x314.jpg","%E2%82%AC%2040","house","private-room","houseprivate-room",".%2Fproperties%2Fchic-cole-valley-house%2F",101,"washington","glover-park-washington",40,"2","4","850","House","Private%20Room","",""],["Cozy%20House%20In%20The%20Sunnyside","38.9029232243","-77.0193099976",12,".%2Fwp-content%2Fuploads%2F2018%2F08%2F8-1-1-1-400x314.jpg","%E2%82%AC%2025","apartment","entire-home","apartmententire-home",".%2Fproperties%2Fcozy-house-in-the-sunnyside%2F",94,"washington","wesley-heights",25,"1","2","750","Apartment","Entire%20Home","",""],["Downtown%20apartment","38.8909367934","-76.9592446089",13,".%2Fwp-content%2Fuploads%2F2018%2F08%2F6-1-1-1-400x314.jpg","%E2%82%AC%2038","apartment","entire-home","apartmententire-home",".%2Fproperties%2Fdowntown-apartment%2F",18657,"washington","wesley-heights",38,"1","2","50","Apartment","Entire%20Home","",""],["Sunny%20Dorm%20in%20West%20Town%20Left%20Sidebar","39.3100537903","-76.6572225094",14,".%2Fwp-content%2Fuploads%2F2018%2F08%2F3-1-1-400x314.jpg","%E2%82%AC%2025","villa","entire-home","villaentire-home",".%2Fproperties%2Fsunny-dorm-in-west-town%2F",145,"baltimore","arlington",25,"1","2","500","Villa","Entire%20Home","",""]]',
+        idx_status: '0',
+        page_custom_zoom: '10',
+        generated_pins: '0',
+        on_demand_pins: 'no',
+      };
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="./wp-content/themes/wprentals/js/google_js/google_map_code.js?ver=1.0" id="wpestate_googlecode_regular-js"></script>
+    <script type="text/javascript" id="wpestate_control-js-extra">
+      /* <![CDATA[ */
+      var control_vars = {
+        searchtext: 'SEARCH',
+        searchtext2: 'Search here...',
+        path: '.\/wp-content\/themes\/wprentals',
+        search_room: 'Type Bedrooms No.',
+        search_bath: 'Type Bathrooms No.',
+        search_min_price: 'Type Min. Price',
+        search_max_price: 'Type Max. Price',
+        contact_name: 'Your Name',
+        contact_email: 'Your Email',
+        contact_phone: 'Your Phone',
+        contact_comment: 'Your Message',
+        zillow_addres: 'Your Address',
+        zillow_city: 'Your City',
+        zillow_state: 'Your State Code (ex CA)',
+        adv_contact_name: 'Your Name',
+        adv_email: 'Your Email',
+        adv_phone: 'Your Phone',
+        adv_comment: 'Your Message',
+        adv_search: 'Send Message',
+        admin_url: '.\/wp-admin\/',
+        login_redirect: '.\/my-profile\/',
+        login_loading: 'Sending user info, please wait...',
+        street_view_on: 'Street View',
+        street_view_off: 'Close Street View',
+        userid: '0',
+        show_adv_search_map_close: '',
+        close_map: 'close map',
+        open_map: 'open map',
+        fullscreen: 'Fullscreen',
+        default: 'Default',
+        addprop: 'Please wait while we are processing your submission!',
+        deleteconfirm: 'Are you sure you wish to delete?',
+        terms_cond: 'You must to agree with terms and conditions!',
+        slider_min: '0',
+        slider_max: '1200',
+        bookconfirmed: "Booking request sent. Please wait for owner's confirmation!",
+        bookdenied: 'The selected period is already booked. Please choose a new one!',
+        to: 'to',
+        curency: '€',
+        where_curency: 'before',
+        price_separator: '.',
+        datepick_lang: 'en-GB',
+        transparent_logo: 'https:\/\/demo1.wprentals.org\/wp-content\/uploads\/2019\/09\/demo1_transparent.png',
+        normal_logo: 'https:\/\/demo1.wprentals.org\/wp-content\/uploads\/2019\/09\/demo1.png',
+        setup_weekend_status: '0',
+        mindays: 'The selected period is shorter than the minimum required period!',
+        weekdays: '["None","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]',
+        stopcheckin: 'Check-in date is not correct',
+        stopcheckinout: 'Check-in\/Check-out dates are not correct',
+        from: 'from',
+        separate_users: 'yes',
+        captchakey: '6LfneyYTAAAAAIpnhd5-QwOxcxCWLAJtqLFQeTtk',
+        usecaptcha: 'no',
+        unavailable_check: 'Unavailable\/Only Check Out',
+        unavailable: 'Unavailable',
+        submission_curency: 'EUR',
+        direct_price: 'To be paid',
+        send_invoice: 'Send me the invoice',
+        direct_pay: 'Payment info: WP RENTALS Inc.  NY99BONW5558887777 -  Include Invoice number in payment details.',
+        direct_title: 'Direct payment instructions',
+        direct_thx: 'Thank you. Please check your email for payment instructions.',
+        guest_any: 'any',
+        my_reservations_url: '.\/my-reservations\/',
+        pls_wait: 'processing, please wait...',
+        wp_estate_book_down: '50',
+        wp_estate_book_down_fixed_fee: '0',
+        include_expeses: 'yes',
+        date_format: 'dd-mm-yy',
+        stiky_search: 'no',
+        geo_radius_measure: 'km',
+        initial_radius: '12',
+        min_geo_radius: '1',
+        max_geo_radius: '50',
+        wp_estate_slider_cycle: '8000',
+        stripe_pay: 'Pay',
+        stripe_pay_for: 'Payment for package',
+        new_tab: '_self',
+      };
+      var control_vars_property = {
+        custom_price: '""',
+        booking_array: '""',
+        default_price: '',
+        mega_details: '""',
+        cleaning_fee_per_day: '0',
+        city_fee_per_day: '0',
+        price_per_guest_from_one: '0',
+        checkin_change_over: '0',
+        checkin_checkout_change_over: '0',
+        min_days_booking: '0',
+        booking_start_hour: '1:00',
+        booking_end_hour: '24:00',
+        rtl_book_hours_calendar: '',
+        extra_price_per_guest: '0',
+        price_per_weekeend: '0',
+      };
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="./wp-content/themes/wprentals/js/control.js?ver=1.0" id="wpestate_control-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
+    <script type="text/javascript" src="./wp-content/themes/wprentals//js/chart.bundle.min.js?ver=1.0" id="jquery.chart.min-js"></script>
+    <script type="text/javascript" src="./wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
+    <script type="text/javascript" src="./wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.0.16" id="elementor-frontend-modules-js"></script>
+    <script type="text/javascript" src="./wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1" id="elementor-dialog-js"></script>
+    <script type="text/javascript" src="./wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+    <script type="text/javascript" src="./wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6" id="swiper-js"></script>
+    <script type="text/javascript" src="./wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.16" id="share-link-js"></script>
+    <script type="text/javascript" id="elementor-frontend-js-before">
+      var elementorFrontendConfig = {
+        environmentMode: { edit: false, wpPreview: false },
+        i18n: {
+          shareOnFacebook: 'Share on Facebook',
+          shareOnTwitter: 'Share on Twitter',
+          pinIt: 'Pin it',
+          download: 'Download',
+          downloadImage: 'Download image',
+          fullscreen: 'Fullscreen',
+          zoom: 'Zoom',
+          share: 'Share',
+          playVideo: 'Play Video',
+          previous: 'Previous',
+          next: 'Next',
+          close: 'Close',
+        },
+        is_rtl: false,
+        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+        version: '3.0.16',
+        is_static: false,
+        legacyMode: { elementWrappers: true },
+        urls: { assets: '.\/wp-content\/plugins\/elementor\/assets\/' },
+        settings: { page: [], editorPreferences: [] },
+        kit: {
+          global_image_lightbox: 'yes',
+          lightbox_enable_counter: 'yes',
+          lightbox_enable_fullscreen: 'yes',
+          lightbox_enable_zoom: 'yes',
+          lightbox_enable_share: 'yes',
+          lightbox_title_src: 'title',
+          lightbox_description_src: 'description',
+        },
+        post: {
+          id: 18460,
+          title: 'Homepage%20Elementor%20%E2%80%93%20My%20Blog',
+          excerpt: '',
+          featuredImage: false,
+        },
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+
+    <script type="text/javascript" src="./wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.16" id="elementor-frontend-js"></script>
+
+   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOJjEor9H6PWdsKLAQSr3dIH1fWJNveGI&libraries=places"></script>
+    <!-- <script type="text/javascript" src="dist-assets/js/plugins/googlemapsapi.js/?key=AIzaSyAOJjEor9H6PWdsKLAQSr3dIH1fWJNveGI&libraries=places"></script> -->
+
+   
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <script type="text/javascript" src="https://onlinebookingus.com/_static/??-eJyFy0EKgzAQheELVYfSUHQhPUqxyVBHk5kxySC9fbNwLzz4N987tPPCFbmCRvsSF1ix6uw3eBN7+BjFALpIFT7TJ+J+LbdDuyaiBWyftt0w/8AIvGS8REmsXKsSKWA+2StN96cbnRvcY/gDkGpENg==" /></script>
+
+ 
+   <script src="js/scripts/script.min.js"></script>
+   <script src="https://onlinebookingus.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.1" id="jquery-ui-datepicker-js"></script>
+<script id="jquery-ui-datepicker-js-after">
+jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type="text/javascript" src="https://onlinebookingus.com/wp-includes/js/jquery/ui/menu.min.js?m=1649448438"></script>
+<script src="https://onlinebookingus.com/wp-content/plugins/gutenberg/build/dom-ready/index.min.js?ver=8ef91b5d96d5175674de" id="wp-dom-ready-js"></script>
+<script id="wp-dom-ready-js-after">
+wp.galleryBlockV2Enabled = true;
+</script>
+<script src="https://onlinebookingus.com/wp-content/plugins/gutenberg/build/a11y/index.min.js?ver=1aab97509efa281a9d62" id="wp-a11y-js"></script>
+<script id="jquery-ui-autocomplete-js-extra">
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+</script>
+<script type="text/javascript" src="https://onlinebookingus.com/_static/??-eJyVkUEOAiEMRS/kQIwTMy6MRzEITUALrVAk4+nF8QKYdNPkvfT/tPEUksXqoOh7n2eFvOoatKlCliIjCKgYkrqXXePJUhJIosVD7Erj3DeDm1ww2McgeyOSItnwIP8Lpl4BGlOWrxUGNEZjwRM6yGXwkoNUYDxRDUqoWj9xTdb/1wbNe0UybtBCI7112d5x7fwlnvfH+TTPy3xYPrl2rjI="></script>
+<script src="https://onlinebookingus.com/wp-includes/js/dist/vendor/moment.min.js?ver=2.29.2" id="moment-js"></script>
+<script id="moment-js-after">
+moment.updateLocale( 'en_US', {"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthsShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"weekdaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"F j, Y","LLL":"F j, Y g:i a","LLLL":null}} );
+</script>
+<script id="wpestate_mapfunctions-js-extra">
+var mapfunctions_vars = {"path":"https:\/\/onlinebookingus.com\/wp-content\/themes\/wprentals\/\/css\/css-images","pin_images":"{\"entire-home\":\"\",\"apartment\":\"\",\"apartmententire-home\":\"\",\"single_pin\":\"https:\\\/\\\/onlinebookingus.com\\\/wp-content\\\/themes\\\/wprentals-child\\\/css\\\/css-images\\\/sale.png\",\"cloud_pin\":\"https:\\\/\\\/onlinebookingus.com\\\/wp-content\\\/themes\\\/wprentals-child\\\/css\\\/css-images\\\/cloud.png\",\"userpin\":\"https:\\\/\\\/onlinebookingus.com\\\/wp-content\\\/themes\\\/wprentals-child\\\/css\\\/css-images\\\/userpin.png\"}","use_single_image_pin":"no","geolocation_radius":"1000","adv_search":"0","in_text":" in ","zoom_cluster":"20","user_cluster":"yes","open_close_status":"0","open_height":"1900","closed_height":"550","generated_pins":"0","geo_no_pos":"The browser couldn't detect your position!","geo_no_brow":"Geolocation is not supported by this browser.","geo_message":"m radius","show_adv_search":"","custom_search":"no","listing_map":"top","slugs":["location","check-in","check-out","","","bedrooms","guests",""],"hows":["like","date bigger","date smaller","like","like","equal","equal","greater"],"measure_sys":"ft","close_map":"close map","show_g_search_status":"","slider_price":"no","slider_price_position":"0","map_style":"[\r\n    {\r\n        \"featureType\": \"landscape.man_made\",\r\n        \"elementType\": \"geometry\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#f7f1df\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"landscape.natural\",\r\n        \"elementType\": \"geometry\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#d0e3b4\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"landscape.natural.terrain\",\r\n        \"elementType\": \"geometry\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"off\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"poi\",\r\n        \"elementType\": \"labels\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"off\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"poi.business\",\r\n        \"elementType\": \"all\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"off\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"poi.medical\",\r\n        \"elementType\": \"geometry\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#fbd3da\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"poi.park\",\r\n        \"elementType\": \"geometry\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#bde6ab\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road\",\r\n        \"elementType\": \"geometry.stroke\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"off\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road\",\r\n        \"elementType\": \"labels\",\r\n        \"stylers\": [\r\n            {\r\n                \"visibility\": \"off\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road.highway\",\r\n        \"elementType\": \"geometry.fill\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#ffe15f\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road.highway\",\r\n        \"elementType\": \"geometry.stroke\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#efd151\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road.arterial\",\r\n        \"elementType\": \"geometry.fill\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#ffffff\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"road.local\",\r\n        \"elementType\": \"geometry.fill\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"black\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"transit.station.airport\",\r\n        \"elementType\": \"geometry.fill\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#cfb2db\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"featureType\": \"water\",\r\n        \"elementType\": \"geometry\",\r\n        \"stylers\": [\r\n            {\r\n                \"color\": \"#a2daf2\"\r\n            }\r\n        ]\r\n    }\r\n]","is_tax":"0","is_property_list":"0","bypass_fit_bounds":"0","useprice":"yes","use_price_pins_full_price":"no","adv_search_type":"newtype","fields_no":"8","hidden_map":""};
+</script>
+<script id="wpestate_ajaxcalls-js-extra">
+var ajaxcalls_vars = {"contact_name":"Your Name","contact_email":"Your Email","contact_phone":"Your Phone","contact_comment":"Your Message","adv_contact_name":"Your Name","adv_email":"Your Email","adv_phone":"Your Phone","adv_comment":"Your Message","adv_search":"Send Message","admin_url":"https:\/\/onlinebookingus.com\/wp-admin\/","login_redirect":"https:\/\/onlinebookingus.com\/my-profile\/","login_loading":"Sending user info, please wait...","userid":"0","prop_featured":"Property is featured","no_prop_featured":"You have used all the \"Featured\" listings in your package.","favorite":"Favorite<i class=\"fas fa-heart\"><\/i>","add_favorite":"Add to Favorites","remove_favorite":"remove from favorites","add_favorite_unit":"add to favorites","saving":"saving..","sending":"sending message..","reserve":"Reserve Period","paypal":"Connecting to Paypal! Please wait...","stripecancel":"subscription will be cancelled at the end of the current period","max_month_no":"12","processing":"processing..","home":"https:\/\/onlinebookingus.com","delete_account":"Confirm your ACCOUNT DELETION request! Clicking the button below will result your account data will be deleted. This means you will no longer be able to login to your account and access your account information: My Profile, My Reservations, My bookings, Invoices. This operation CAN NOT BE REVERSED!","adv_search_what_half":["Location","guest_no","check_in","check_out","property_category","property_action_category","Location","Location","property_price"],"adv_search_how_half":["like","equal","date bigger","date smaller","like","like","greater","greater","equal"],"adv_search_type":"newtype","redirect_users":"yes","redirect_custom_link":"","use_gdpr":"yes","gdpr_terms":"You must agree to GDPR Terms"};
+</script>
+<script id="wpestate_mapfunctions_base-js-extra">
+var mapbase_vars = {"wprentals_map_type":"1","wprentals_places_type":"1","wp_estate_mapbox_api_key":"","wp_estate_algolia_app_id":"J2M6S6YKNA","wp_estate_algolia_api_key":"1741dd14a8cb0b2ba66183451fef9042"};
+</script>
+<script id="wpestate_googlecode_property-js-extra">
+var googlecode_property_vars = {"general_latitude":"40.7075798804","general_longitude":"-74.0480232239","path":"https:\/\/onlinebookingus.com\/wp-content\/themes\/wprentals\/\/css\/css-images","markers":"[[\"nice%201Br%20apt%20in%20nj%20near%20manhattan%20111050301\",\"40.83059\",\"-73.9725\",1,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F83048f41-db70-46bc-8b8d-f0d793265055-400x314.jpg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F111050301%2F\",20340,\"edgewater\",\"manhattan\",150,\"1\",\"3\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 150\"],[\"nice%202br%20apt%20in%20nj%20near%20manhattan%20221050302\",\"40.826966572714\",\"-73.973175145508\",2,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F1a1c73a7-f18a-4ac8-99f9-bc0eabfca6b6-400x314.jpg%3Fcrop%3D1\",\"%24%20200\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F221050302%2F\",20320,\"edgewater\",\"manhattan\",200,\"3\",\"4\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 200\"],[\"nice%202br%20apt%20in%20nj%20near%20manhattan%20221050502\",\"40.830741703678\",\"-73.972939882278\",3,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F6ddd02b4-8595-446d-8dc1-507703c131b3-400x314.jpg%3Fcrop%3D1\",\"%24%20185\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F221050502%2F\",20297,\"edgewater\",\"manhattan\",185,\"2\",\"4\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 185\"],[\"nice%201Br%20apt%20in%20nj%20near%20manhattan%20111050403\",\"40.831672466638\",\"-73.9725\",4,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F27b76e69-ddf5-4575-b28d-7dbf74000498-400x314.jpg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F111050403%2F\",20296,\"edgewater\",\"manhattan\",150,\"1\",\"3\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 150\"],[\"nice%201Br%20apt%20in%20nj%20near%20manhattan%20111050401\",\"40.828284974663\",\"-73.972714576721\",5,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F253db76a-9adc-4156-a2e1-53755a01f9fc-400x314.jpg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F111050401%2F\",20284,\"edgewater\",\"manhattan\",150,\"1\",\"3\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 150\"],[\"Adorable%202br%20apt%20in%20nj%20near%20manhattan%20221050202\",\"40.829821582561\",\"-73.972746763229\",6,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F4fef870c-4600-4221-b3f2-2d5fef666f3d-400x314.jpg%3Fcrop%3D1\",\"%24%20185\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F221050202%2F\",20248,\"edgewater\",\"manhattan\",185,\"2\",\"4\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 185\"],[\"nice%201Br%20apt%20in%20nj%20near%20manhattan%20111050203\",\"40.829418470611\",\"-73.972221050262\",7,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F0ec4c0c9-2440-4531-b93e-8fd4165ce226-400x314.jpg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F111050203%2F\",20231,\"edgewater\",\"manhattan\",150,\"1\",\"3\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 150\"],[\"nice%201Br%20apt%20in%20nj%20near%20manhattan%20111050201\",\"40.829134337368\",\"-73.972328338623\",8,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F3a9c9f37-b083-40a5-acdc-3c226c7c05a9-400x314.jpg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fnice-1br-apt-in-nj-near-manhattan-111050103%2F\",20177,\"edgewater\",\"manhattan\",150,\"1\",\"3\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 150\"],[\"nice%201Br%20apt%20in%20nj%20near%20manhattan%20111050101\",\"40.830113830851\",\"-73.972371253967\",9,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F06%2F2ac313b4-3f7b-4dc3-950e-eb62c07cf8db-400x314.jpg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fnice-1br-apt-in-nj-near-manhattan-111050101%2F\",20154,\"edgewater\",\"manhattan\",150,\"1\",\"3\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 150\"],[\"nice%202br%20apt%20in%20nj%20near%20manhattan%20221050402\",\"40.831246238482\",\"-73.972736034393\",10,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F12%2F1fadd691-a33d-41c9-8614-bd343802603d-400x314.jpg%3Fcrop%3D1\",\"%24%20185\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fnice-2br-apt-in-nj-near-manhattan%2F\",19877,\"edgewater\",\"manhattan\",185,\"2\",\"4\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 185\"],[\"22626%20Gray%20apartment%20in%20Manhattan%20near%20Times%20Square\",\"40.765101804881\",\"-73.98864603281\",11,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F04%2FIMG_1682-400x314.jpg%3Fcrop%3D1\",\"%24%20375\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fcozy-apartment-in-manhattan-near-times-square-d%2F\",19990,\"new-york-city\",\"new-jersey\",375,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 375\"],[\"Cozy%202Br%20near%20TimesSquare%20and%20central%20park%20L\",\"40.7677879\",\"-73.991741\",12,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F03%2FDSC3534-400x314.jpeg%3Fcrop%3D1\",\"%24%20350\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F__trashed%2F\",19934,\"new-york\",\"\",350,\"2\",\"4\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 350\"],[\"Very%20nice%202Br%202Bth%20apartment%20west%20manhattan%20E\",\"40.768115717007\",\"-73.992498495149\",13,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F03%2FDA2CEBFC-7EB1-4800-8D69-DC75F470D8ED-400x314.jpeg%3Fcrop%3D1\",\"%24%20350\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F22e%2F\",19972,\"new-york-city\",\"manhattan\",350,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 350\"],[\"Cozy%20apartment%20in%20Manhattan%20near%20Times%20Square%20D\",\"40.767175945149\",\"-73.99024049737\",14,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F03%2FAF34B8CE-1753-48B4-A8D6-8E35A45017C4-400x314.jpeg%3Fcrop%3D1\",\"%24%20354\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fcozy-apartment-in-manhattan-near-times-square%2F\",19951,\"new-york\",\"new-jersey\",354,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 354\"],[\"Luxury%20one%20bedroom%20edgewater%20near%20river%20and%20manhattan%20221050102\",\"40.8305497\",\"-73.9723737\",15,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F10%2F0D3F4C3E-D4FC-447A-BB9A-D60C03B832CC-400x314.jpeg%3Fcrop%3D1\",\"%24%20185\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F221050102%2F\",19788,\"edgewater\",\"\",185,\"2\",\"4\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 185\"],[\"Very%20bright%20and%20nice%201%20bedroom%20with%20fantastic%20view%20111050103\",\"40.829386436495\",\"-73.972020394971\",16,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F10%2F01bb10ca-9b99-438e-9f0e-e54f8e49c479-400x314.jpg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F111050103%2F\",19801,\"edgewater\",\"\",150,\"1\",\"2\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 150\"],[\"Very%20bright%20and%20nice%201%20bedroom%20with%20fantastic%20view%20111050503\",\"40.8305497\",\"-73.9723737\",17,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F10%2F4b8b40dc-3d0c-4bad-9910-7ac42ca1bad3-400x314.jpg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F111050503%2F\",19802,\"edgewater\",\"\",150,\"1\",\"3\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 150\"],[\"Very%20nice%202%20bedroom%20with%20balcony%20near%20manhattan%2022A311\",\"40.817161\",\"-73.9812706\",18,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F08%2F9D633E34-B814-4722-BCD5-8A083A77B36C-400x314.jpeg%3Fcrop%3D1\",\"%24%20217\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fvery-nice-2-bedroom-with-balcony-near-manhattan-22311%2F\",19679,\"edgewater\",\"\",217,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 217\"],[\"Very%20nice%202%20bedroom%20with%20balcony%20near%20manhattan%2022A330\",\"40.817161\",\"-73.9812706\",19,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F08%2FA82111CD-3F72-4561-A4A5-6893CBFDD540-400x314.jpeg%3Fcrop%3D1\",\"%24%20210\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fvery-nice-2-bedroom-with-balcony-near-manhattan-22330%2F\",19681,\"edgewater\",\"\",210,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 210\"],[\"Luxury%201%20bedroom%20near%20manhattan%2011A803\",\"40.817161\",\"-73.9812706\",20,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F08%2F23BAEAF6-ED3F-4532-A150-39DAAE83EC6B-400x314.jpeg%3Fcrop%3D1\",\"%24%20150\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fluxury-1-bedroom-near-manhattan-11330%2F\",19717,\"edgewater\",\"manhattan\",150,\"1\",\"3\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 150\"],[\"2229%20Top%20of%20the%20line%20%202bedroom%202.5%20bathroom%20in%20amazing%20building\",\"40.817161\",\"-73.9812706\",21,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F04%2F51D16A18-5DEF-42FA-8B30-85B98032C542-400x314.jpeg%3Fcrop%3D1\",\"%24%20226\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Ftop-of-the-line-2bedroom-2-5-bathroom-in-amazing-building%2F\",19608,\"edgewater\",\"\",226,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 226\"],[\"22412%20Amazing%20Manhattan%20%20View%202%20bedroom%202%20bath%20Near%20the%20river\",\"40.8033986\",\"-73.9911374\",22,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F04%2FDC3CECED-7D67-441E-9232-063C2E11FAD5-400x314.jpeg%3Fcrop%3D1\",\"%24%20200\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Famazing-manhattan-view-2-bedroom-2-bath-near-the-river%2F\",19594,\"edgewater\",\"\",200,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 200\"],[\"22230%20Amazing%20Golden%202%20Bedrooms%20In%20High%20Class%20Building\",\"40.817161\",\"-73.9812706\",23,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F04%2FDSC1369-400x314.jpg%3Fcrop%3D1\",\"%24%20226\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F22501%2F\",19581,\"edgewater\",\"\",226,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 226\"],[\"22410%20Red%202%20Bedrooms%202%20Bathrooms%20Near%20Manhattan\",\"40.8033986\",\"-73.9911374\",24,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F04%2FFile_005-400x314.jpeg%3Fcrop%3D1\",\"%24%20190\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fred-2-bedrooms-2-bathrooms-near-manhattan%2F\",19568,\"edgewater\",\"\",190,\"2\",\"4\",\"0\",\"Apartment\",\"Entire%20Home\",\"\",\"$ 190\"],[\"22501%20Lemon%202%20Br%202%20Bath%20near%20manhattan%20with%20Panoramic%20View\",\"40.8033986\",\"-73.9911374\",25,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F04%2FC5D2A1F9-5360-48F9-8B3E-65872F001C87-400x314.jpeg%3Fcrop%3D1\",\"%24%20195\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Flemon-2-br-2-bath-near-manhattan-with-panoramic-view%2F\",19554,\"edgewater\",\"\",195,\"2\",\"2\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 195\"],[\"White%20Nice%202%20Br%20Near%20Manhattan%2022c203\",\"40.8033986\",\"-73.9911374\",26,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2021%2F02%2FFE8779EB-7EB7-4A51-9461-D1C1E5E25F44-400x314.jpeg%3Fcrop%3D1\",\"%24%20186\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2Fwhite-nice-2-br-near-manhattan%2F\",19148,\"edgewater\",\"manhattan\",186,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20Home\",\"verified\",\"$ 186\"]]","single_marker":"[[\"Very%20nice%202Br%202Bth%20apartment%20west%20manhattan%20E\",40.768115717007,-73.992498495149,1,\"https%3A%2F%2Fonlinebookingus.com%2Fwp-content%2Fuploads%2F2022%2F03%2FDA2CEBFC-7EB1-4800-8D69-DC75F470D8ED.jpeg\",\"%24%20350\",\"apartment\",\"entire-home\",\"apartmententire-home\",\"https%3A%2F%2Fonlinebookingus.com%2Fproperties%2F22e%2F\",19972,\"new-york-city\",\"manhattan\",350,\"2\",\"5\",\"0\",\"Apartment\",\"Entire%20home\",\"\",\"$ 350\"]]","single_marker_id":"19972","camera_angle":"0","idx_status":"0","page_custom_zoom":"16","current_id":"19972","generated_pins":"0","small_map":"0"};
+</script>
+<script id="wpestate_control-js-extra">
+var control_vars = {"searchtext":"SEARCH","searchtext2":"Search here...","path":"https:\/\/onlinebookingus.com\/wp-content\/themes\/wprentals","search_room":"Type Bedrooms No.","search_bath":"Type Bathrooms No.","search_min_price":"Type Min. Price","search_max_price":"Type Max. Price","contact_name":"Your Name","contact_email":"Your Email","contact_phone":"Your Phone","contact_comment":"Your Message","zillow_addres":"Your Address","zillow_city":"Your City","zillow_state":"Your State Code (ex CA)","adv_contact_name":"Your Name","adv_email":"Your Email","adv_phone":"Your Phone","adv_comment":"Your Message","adv_search":"Send Message","admin_url":"https:\/\/onlinebookingus.com\/wp-admin\/","login_redirect":"https:\/\/onlinebookingus.com\/my-profile\/","login_loading":"Sending user info, please wait...","street_view_on":"Street View","street_view_off":"Close Street View","userid":"0","show_adv_search_map_close":"","close_map":"close map","open_map":"open map","fullscreen":"Fullscreen","default":"Default","addprop":"Please wait while we are processing your submission!","deleteconfirm":"Are you sure you wish to delete?","terms_cond":"You must to agree with terms and conditions!","slider_min":"1","slider_max":"50000","bookconfirmed":"Booking request sent. Please wait for owner's confirmation!","bookdenied":"The selected period is already booked. Please choose a new one!","to":"to","curency":"$","where_curency":"before","price_separator":",","datepick_lang":"en-GB","transparent_logo":"https:\/\/onlinebookingus.com\/wp-content\/uploads\/2019\/03\/White-logo-no-background.png","normal_logo":"https:\/\/onlinebookingus.com\/wp-content\/uploads\/2019\/03\/cropped-Color-logo-no-background-1.png","setup_weekend_status":"0","mindays":"The selected period is shorter than the minimum required period!","weekdays":"[\"None\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\",\"Sunday\"]","stopcheckin":"Check-in date is not correct","stopcheckinout":"Check-in\/Check-out dates are not correct","from":"from","separate_users":"yes","captchakey":"6Lf4OlwaAAAAAFZQ4GgBERSiMImH5_5gh1achni3","usecaptcha":"yes","unavailable_check":"Unavailable\/Only Check Out","unavailable":"Unavailable","submission_curency":"$","direct_price":"To be paid","send_invoice":"Send me the invoice","direct_pay":"Payment info: WP RENTALS Inc.  NY99BONW5558887777 -  Include Invoice number in payment details.","direct_title":"Direct payment instructions","direct_thx":"Thank you. Please check your email for payment instructions.","guest_any":"any","my_reservations_url":"https:\/\/onlinebookingus.com\/my-reservations\/","pls_wait":"processing, please wait...","wp_estate_book_down":"100","wp_estate_book_down_fixed_fee":"0","include_expeses":"yes","date_format":"mm-dd-yy","stiky_search":"no","geo_radius_measure":"miles","initial_radius":"12","min_geo_radius":"1","max_geo_radius":"50","wp_estate_slider_cycle":"8000","stripe_pay":"Pay","stripe_pay_for":"Payment for package","new_tab":"_self"};
+var control_vars_property = {"custom_price":"\"\"","booking_array":"\"\"","default_price":"350","mega_details":"\"\"","cleaning_fee_per_day":"0","city_fee_per_day":"0","price_per_guest_from_one":"0","checkin_change_over":"0","checkin_checkout_change_over":"0","min_days_booking":"30","booking_start_hour":"1:00","booking_end_hour":"24:00","rtl_book_hours_calendar":"","extra_price_per_guest":"0","price_per_weekeend":"0"};
+</script>
+<script id="wpestate_ajaxcalls_add-js-extra">
+var ajaxcalls_add_vars = {"admin_url":"https:\/\/onlinebookingus.com\/wp-admin\/","tranport_custom_array":"[\"check-in-hour\",\"check-out-hour\",\"breakfast-included\",\"late-check-in\",\"optional-services\",\"outdoor-facilities\",\"extra-people\",\"cancellation-policy\"]","wpestate_autocomplete":"yes","mandatory_fields":["prop_category_submit","prop_action_category_submit","property_city_front","property_description","property_price","min_days_booking","property_bedrooms","property_bathrooms","property_address","property_zip","property_state","property_map","property_latitude","property_longitude","cancellation-policy"],"mandatory_fields_label":{"title":"Title","prop_category_submit":"Main Category","prop_action_category_submit":"Second Category","property_city_front":"Property\/Item City","property_area_front":"Property\/Item Area","property_description":"Description","property_affiliate":"Affiliate link","property_price":"Listing Price","property_taxes":"Listing Taxes","property_price_per_week":"Listing Price per day for 7 or more booked days","property_price_per_month":"Listing Price per day for 30 or more booked days","price_per_weekeend":"Listing Price per weekend","cleaning_fee":"Cleaning Fee","city_fee":"City Fee","min_days_booking":"Minimum Days","security_deposit":"Security Deposit","early_bird_percent":"Early Bird Discount","extra_price_per_guest":"Extra Price per Guest","checkin_change_over":"Start check-in on ","checkin_checkout_change_over":"Start\/End check-in on ","extra_options":"Extra Booking options","custom_prices":"Custom Price","attachid":"Property Media","embed_video_id":"Embed Video Id","embed_video_type":"Embed Video Type","virtual_tour":"Virtual Tour","property_size":"property Size","property_rooms":"Property Rooms","property_bedrooms":"Property Bedrooms","property_bathrooms":"Property Bathrooms","cancellation_policy":"Cancellation Policy","smoking_allowed":"Smoking Allowed","pets_allowed":"Pets Allowed","party_allowed":"Party Allowed","children_allowed":"Children Allowed","other_rules":"Other Rules","property_address":"Property Address","property_zip":"Property Zip","property_county":"Property County","property_state":"Property State","property_latitude":"Property Latitude","property_longitude":"Property Longitude","google_camera_angle":"Google Camera Angle","check-in-hour":"Check-in hour","check-out-hour":"Check-Out hour","breakfast-included":"Breakfast Included","late-check-in":"Late Check-in","optional-services":"Optional services","outdoor-facilities":"Outdoor facilities","extra-people":"Extra People","cancellation-policy":"Cancellation Policy","air-conditioner":"Air Conditioner","amenities":"Amenities","bar-restaurant":"Bar \/ Restaurant","carbon-monoxide-detector":"Carbon monoxide detector","check-in-check-out-in-person":"Check-in\/Check-out in Person","cleaned-with-disinfectant":"Cleaned With Disinfectant","doorman":"Doorman","dryer":"Dryer","elevator-in-building":"Elevator in Building","essentials":"Essentials","facilities":"Facilities","family-kid-friendly":"Family\/Kid Friendly","fax":"Fax","fire-extinguisher":"Fire Extinguisher","first-aid-kit":"First aid kit","free-parking-on-premises":"Free Parking on Premises","gym":"Gym","heating":"Heating","hot-tub":"Hot Tub","indoor-fireplace":"Indoor Fireplace","internet":"Internet","kitchen":"Kitchen","non-smoking":"Non Smoking","pets-allowed":"Pets Allowed","phone-booth-lines":"Phone (booth\/lines)","pool":"Pool","projectors":"Projector(s)","safety-features":"Safety Features","scanner-printer":"Scanner \/ Printer","smoke-detector":"Smoke Detector","smoking-allowed":"Smoking Allowed","suitable-for-events":"Suitable for Events","tv":"TV","washer-amenities":"Washer","wheelchair-accessible":"Wheelchair Accessible","wireless-internet":"Wireless Internet"},"pls_fill":"Please complete these fields","submit_redirect":"https:\/\/onlinebookingus.com\/user-dashboard\/"};
+</script>
+<script id="wpestate_property-js-extra">
+var property_vars = {"plsfill":"Please fill all the forms:","sending":"Sending Request...","logged_in":"no","notlog":"You need to log in order to book a listing!","viewless":"View less","viewmore":"View more","nostart":"Check-in date cannot be bigger than Check-out date","noguest":"Please select the number of guests","guestoverload":"The number of guests is greater than the property capacity - ","guests":"guests","early_discount":"0","rental_type":"0","book_type":"1","reserved":"reserved","use_gdpr":"yes","gdpr_terms":"You must agree to GDPR Terms","is_woo":"no","allDayText":"hours","clickandragtext":"click and drag to select the hours"};
+</script>
+<script id="wpestate_dashboard-control-js-extra">
+var dashboard_vars = {"deleting":"deleting...","searchtext2":"Search here...","currency_symbol":"$","where_currency_symbol":"before","book_down":"100","book_down_fixed_fee":"0","discount":"Discount","delete_inv":"Delete Invoice","issue_inv":"Invoice Issued","confirmed":"Confirmed","issue_inv1":"Issue invoice","sending":"sending...","send_reply":"Send Reply","plsfill":"Please fill in all the fields","datesb":"Dates are already booked. Please check the calendar for free days!","datepast":"You cannot select a date in the past! ","bookingstart":"Start date cannot be greater than end date !","selectprop":"Please select a property !","err_title":"Please submit a title !","err_category":"Please pick a category !","err_type":"Please pick a typr !","err_guest":"Please select the guest no !","err_city":"Please pick a city !","doublebook":"This period is already booked","deleted_feed":"Delete imported dates","sent":"done","service_fee_fixed_fee":"0","service_fee":"0","single_fee":"Single Fee","per_hdnight":"Per H\/Day\/Night","per_guest":"Per Guest","reserved":"reserved","checkout_url":"","delete_mess":"Are you sure you want to delete this?","bed_types":["kingbed","queenbed","double","single","couch"],"bed_types_names":{"kingbed":"King Bed","queenbed":"Queen Bed","double":"Double","single":"Single","couch":"Couch"},"bedroom":"Bedroom","cancel_mess":"Are you sure you want to cancel?","processing":"processing..","view_details":"View Details","invoice_created":"Invoice Created - Check & Pay","invoice_pay":"Pay Invoice in Full","invoice_issue":"Issue invoice"};
+</script>
+<script type="text/javascript" src="https://onlinebookingus.com/_static/??-eJyVktFuwyAMRX9oSVQtmtKHadJe9hnIASchBZsaojR/P9pGqvYykTeD78FXvqyh0kwJKTVpQo+xWYPkE7jYzLExkFCARgxWX1DqOb6t/xP21NEDexIVUvXzXcLRwD3fCpQj8+hQ5cqD5BHaLTG7LHL3YvdLFSwd4tjH2h9kPIRhIZ0sUywAYYabBudKtH+GRNVDxEPUXmVYaTaonI3J0ljwxr0n7AqU83VB2eoBSG/3iAPoy5E1KDCmQB+EA0radqml/DEM7l69z8JKMLitJL4HNIGkul/IOCyM3ECcegYx1Ws7X/7z9NGe27Zr37tf6PNRHg=="></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=wpestate_onloadCallback&amp;render=explicit&amp;hl=iw%22+async+defer&amp;ver=1.0" id="recaptcha-js"></script>
+<script id="jetpack-lazy-images-js-extra">
+var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+</script>
+<script type="text/javascript" src="https://onlinebookingus.com/_static/??-eJytjcEKwjAQRH/IdDFaPYmfUtJkKVuTTcluGurX24OCF2+eBmZ4b9pifGZFVlhinYgFZtTF+QcMxB7GSjGANlLFYpQSRmLsEnE3y6H9pt85rMghF3BVc3Kq5D+Lie65GUpuQoFAokC7qQh6pcwmj4JlxfL/m69il9/T7Xjpe2uv55N9AYxhZt8="></script>
+<script src="https://stats.wp.com/e-202225.js" defer=""></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.1-a.3',blog:'146979396',post:'19972',tz:'-4',srv:'onlinebookingus.com',hp:'atomic',ac:'2',amp:'0'} ]);
+	_stq.push([ 'clickTrackerInit', '146979396', '19972' ]);
+</script>
+
+
+
+  </body>
+</html>

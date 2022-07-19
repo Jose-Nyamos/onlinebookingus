@@ -1,0 +1,22 @@
+#front-search-form .input-group-addon{
+    border-radius: 0;
+    border: 0px;
+    font-size: 20px;
+    color: #50adbc;
+    background: #fff;
+    border-radius: 2px 0px 0px 2px;
+}
+#front-search-form input,#front-search-form select{
+    border-radius: 0;
+    border: 0px;
+    background: #fff;
+    border-radius:0px 2px 2px 0px;
+}
+#colophon {
+    background-color: #E9ECF2;
+    background-color: #f0f0f0;
+    color: #5d6475;
+    display: inline-block;
+    width: 100%;
+    float: left;
+}

@@ -1,0 +1,120 @@
+body {
+    color: #8d8d8d;
+  }
+  .headercontainer {
+    border-bottom: 2px solid #abe150;
+  }
+  
+  .padding {
+    padding: 10px 100px;
+  }
+
+  
+  header span img {
+    width: 20px;
+    padding-right: 5px;
+  }
+  .aligncenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .steps {
+    margin: 20px;
+    
+  }
+  
+  .steps ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .steps li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .steps li:not(:last-child) {
+    padding-right: 20px;
+  }
+  
+  .active {
+    color: #abe150;
+  }
+  
+  li span:first-child {
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 2px 9px;
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+  
+  li span:last-child {
+    padding-bottom: 5px;
+  }
+  
+  .active span:last-child {
+    border-bottom: 2px solid #abe150;
+  }
+  li {
+    position: relative;
+  }
+  li span:last-child {
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 112px;
+    right: 0;
+    z-index: -1;
+    
+  }
+  
+  .stepped span {
+    margin-right: 2px;
+    border: 2px solid #abe150;
+    padding: 5px 40px;
+    color: #abe150;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .stepscompleted span {
+    margin-right: 2px;
+    border: 2px solid #abe150;
+    padding: 5px 30px;
+    color: #abe150;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .stepped span:hover {
+    color: #767676;
+  }
+  
+  .stepscompleted span:hover {
+    color: #767676;
+  }
+  .test-margin{
+    margin-left: 50px;
+
+    border: #abe150 solid 2px;
+  }
+
+  .set-margin{
+    margin-bottom: 10px;
+  }
+
+  .create-margin{
+    margin-top: 150px;
+  }
+  
